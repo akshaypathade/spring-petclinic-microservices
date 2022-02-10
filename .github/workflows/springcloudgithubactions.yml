@@ -35,4 +35,4 @@ jobs:
           service-name: spring-petclinic-api-gateway
           app-name: gatewayserver
           use-staging-deployment: false
-          package: ${{ env.ASC_PACKAGE_PATH }}/**/spring-petclinic-api-gateway-2.5.1.jar
+          package: ${{ env.ASC_PACKAGE_PATH }}/target/spring-petclinic-api-gateway-2.5.1.jar
