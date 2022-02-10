@@ -24,9 +24,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-  jobs:       
-  Deploy_all_microservice:
-    steps:
+        
       - name: Deploy api-gateway
         uses: azure/spring-cloud-deploy@v1
         with:
