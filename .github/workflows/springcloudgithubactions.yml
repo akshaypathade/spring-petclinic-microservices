@@ -32,7 +32,7 @@ jobs:
         with:
           azure-subscription: ${{ env.AZURE_SUBSCRIPTION }}
           action: Deploy
-          service-name: spring-petclinic-api-gateway
+          service-name: javaspringgithubactionscicd
           app-name: gatewayserver
           use-staging-deployment: false
-          package: spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.5.1.jar
+          package: ${{ github.workspace }}/spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.5.1.jar
