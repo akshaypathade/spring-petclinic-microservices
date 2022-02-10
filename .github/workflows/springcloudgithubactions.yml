@@ -2,7 +2,7 @@
 name: AzureSpringCloud
 on: push
 env:
-  ASC_PACKAGE_PATH: ${{ github.workspace }}
+  ASC_PACKAGE_PATH: /home/runner/work/spring-petclinic-microservices/spring-petclinic-microservices/spring-petclinic-api-gateway/target/
   AZURE_SUBSCRIPTION: 76ef1363-bd69-411b-9be2-6c4d8bcd6d27
 
 jobs:
@@ -35,4 +35,4 @@ jobs:
           service-name: spring-petclinic-api-gateway
           app-name: gatewayserver
           use-staging-deployment: false
-          package: ${{ env.ASC_PACKAGE_PATH }}/target/spring-petclinic-api-gateway-2.5.1.jar
+          package: ${{ env.ASC_PACKAGE_PATH }}/spring-petclinic-api-gateway-2.5.1.jar
